@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegance Vestidos | Catálogo Completo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Elegance Vestidos</h1>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <header class="topo">
+        <div class="container">
+            <h1>Elegance <span>Vestidos</span></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="catalogo">
-        <h2>Nossa Coleção</h2>
+    <section id="home" class="banner">
+        <div class="banner-text">
+            <h2>Beleza e elegância em cada detalhe</h2>
+            <p>Descubra nossa coleção exclusiva de vestidos para todas as ocasiões.</p>
+            <a href="#catalogo" class="btn">Ver Catálogo</a>
+        </div>
+    </section>
 
+    <main id="catalogo" class="container">
+        <h2>Nossa Coleção</h2>
         <section class="vestidos-grid">
             <div class="vestido-card">
                 <img src="vestido1.jpg" alt="Vestido de Festa Vermelho">
@@ -26,12 +41,36 @@
                 <p class="preco">R$ 499,00</p>
                 <button>Ver Detalhes</button>
             </div>
-            
-            </section>
+
+            <div class="vestido-card">
+                <img src="vestido2.jpg" alt="Vestido Azul Elegante">
+                <h3>Vestido Safira</h3>
+                <p class="preco">R$ 579,00</p>
+                <button>Ver Detalhes</button>
+            </div>
+
+            <div class="vestido-card">
+                <img src="vestido3.jpg" alt="Vestido de Gala Preto">
+                <h3>Vestido Noite</h3>
+                <p class="preco">R$ 699,00</p>
+                <button>Ver Detalhes</button>
+            </div>
+        </section>
     </main>
 
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas ou deseja encomendar um modelo exclusivo?</p>
+            <a href="mailto:contato@elegancevestidos.com" class="btn">Fale Conosco</a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Elegance Vestidos. Dados gerenciados por Java Backend.</p>
+        <div class="container">
+            <p>&copy; 2025 Elegance Vestidos. Todos os direitos reservados.</p>
+            <p class="creditos">Dados gerenciados por Java Backend.</p>
+        </div>
     </footer>
 </body>
 </html>
